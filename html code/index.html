@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-comm Web | india</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .navbar {
+            background-color: #fee0f9;
+        }
+
+        .nav-items {
+            width: 97%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .nav-items .logo {
+            text-align: center;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-item-list {
+            font-size: 1rem;
+        }
+
+        .nav-item-list ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .nav-item-list ul a:hover{
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* row-2 styling  */
+
+        .row-2 {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .row2-cont {}
+
+        .row2-cont img {
+            height: 500px;
+        }
+
+        .main-heading {
+            font-size: 2rem;
+            margin: 25px 0px;
+        }
+
+        .btn {
+            padding: 8px 30px;
+            margin: 30px 0px;
+            border-radius: 30px;
+        }
+
+        .btn:hover {
+            background-color: rgba(253, 0, 0, 0.844);
+            color: white;
+            border-radius: 0px;
+        }
+
+
+        .main-2 {
+            max-width: 1150px;
+            /*use max-width instead of width for better responsiveness*/
+            margin: auto;
+            /* border: 2px solid red; */
+        }
+
+        .row3-container {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 44px;
+        }
+
+        .row3-img {
+            flex-basis: 30%;
+            /* margin: 10px; */
+
+        }
+
+        .row3-img img {
+            height: 290px;
+
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        /* main 3 content  */
+
+        .main-3 {
+            margin-top: 75px;
+        }
+
+        .row4-heading {
+            margin-bottom: 80px;
+        }
+
+        .row4-heading {
+            text-align: center;
+            /* border: 2px solid red; */
+        }
+
+        .row4-container {
+            /* border: 2px solid red; */
+        }
+
+        .row4 img {
+            /* border: 2px solid red; */
+            height: 320px;
+            width: 100%;
+            transition: transform 0.6s;
+        }
+
+        .row4 img:hover {
+            /* border: 2px solid red; */
+            height: 320px;
+            width: 100%;
+            transform: translatey(-20px);
+        }
+
+        .row4-imgs {
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            justify-content: space-evenly;
+            /* padding-inline: 100px; */
+        }
+
+        /* row 4 content  */
+
+        .main-4 {
+            /* border: 2px solid red; */
+        }
+
+        .row5-heading {
+            padding: 48px 0px;
+            text-align: center;
+        }
+
+        .row5-container {
+            /* border: 2px solid red; */
+        }
+
+
+        .row5-img-container {
+            margin-top: 104px;
+            margin-bottom: 176px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* border: 2px solid red; */
+        }
+
+        .row5-img img {
+            /* border: 2px solid purple; */
+            height: 320px;
+            /* border-radius: 10px; */
+            /* transition: transform 0.5s; */
+            /* transition: width 2s, background-color 1s; */
+            transition: transform 0.5s;
+
+        }
+
+        .row5-img img:hover {
+            height: 320px;
+            border-radius: 30px;
+            transform: translateY(-15px);
+        }
+
+        .rating i {
+            color: red;
+        }
+
+        .s-last {
+            border-radius: 50px;
+            display: flex;
+            background-color: white;
+            align-items: center;
+            /* border: 2px solid red; */
+            transition: transform 0.5s;
+        }
+
+        .s-last:hover {
+            background-color: #fee0f9;
+            transform: translatey(-10px);
+        }
+
+        .s-img img {
+            max-width: 100%;
+            padding: 50px;
+        }
+
+        .s-cont {
+            padding-right: 50px;
+        }
+
+        .s-last2 {
+            /* border: 2px solid red; */
+        }
+
+        .s-last2-b-cont {
+            margin-top: 50px;
+            /* border: 2px solid red; */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .b-cont {
+            padding: 27px 10px 15px 10px;
+            box-shadow: 0px 0px 20px 10px #efd6d6;
+            flex-basis: 30%;
+            transition: transform 0.6s;
+        }
+
+        .b-cont:hover {
+            transform: translatey(-20px);
+            background-color: #d7cdfe;
+            border-radius: 30px;
+        }
+
+        .b-cont i {
+            margin-top: 20px;
+        }
+
+        .b-cont p {
+            /* padding: 21px 10px 15px 10px; */
+            font-size: 0.9rem;
+        }
+
+        .b-cont img {
+            margin-top: 20px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+
+
+        .client-section {
+            margin-top: 150px;
+            /* margin-bottom: 55px; */
+            /* border: 2px solid red; */
+        }
+
+        .client-section h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            /* border: 2px solid red; */
+        }
+
+        .client {
+            max-width: 872px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 2px solid red; */
+        }
+
+        .client .logo img {
+            height: 20px;
+        }
+
+        #self-logo {
+            border-radius: 50px;
+            height: 54px;
+        }
+
+        .itself {
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            height: 450px;
+            background-color: grey;
+        }
+
+        .main-foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 100%;
+            width: 1053px;
+            margin: auto;
+        }
+
+        .main {
+            margin: 23px;
+        }
+
+        .main p {
+            margin-top: 8px;
+            margin-bottom: 15px;
+            font-weight: 60px;
+            font-size: 0.8rem;
+        }
+
+        .main h3 {
+            margin-top: 23px;
+            font-weight: 60px;
+            font-weight: 300px;
+        }
+
+        .foo-img {
+            margin-left: 10px;
+        }
+
+        .foo-img img {
+            height: 35px;
+        }
+        .img img{
+            height: 118px;
+        }
+
+
+        @media screen and (max-width:400px) {
+            .s-last2-b-cont{
+                flex-direction: column;
+                gap: 20px;
+            }
+            .main-foot{
+               display: block;
+            }
+            .s-cont{
+                padding: 0px 10px 10px 10px;
+            }
+            .s-cont p{
+                text-align: center;
+                font-weight: 600;
+                font-size: 0.9rem;
+                margin-top: 23px;
+            }
+            h1{
+                text-align: center;
+            }
+            .c-cont-p{
+
+            }
+            .s-img{
+                text-align: center;
+
+            }
+            .s-last{
+                display: block;
+                padding: 0px;
+            }
+            #btn{
+                text-align: center;
+                margin: 24px 0px 0px 0px;
+            }
+            .row3-container{
+                text-align: center;
+                display: block;
+            }
+            .nav-items{
+                display: block;
+                text-align: center;
+            }
+            .nav-item-list{
+                margin-top: 36px;
+                font-size: 0.9rem;
+            }
+            .row2-cont img{
+                max-width: 300px;
+                object-fit: contain;
+            }
+            .main-heading{
+                font-size: 1.3rem;
+            }
+            .price{
+                margin-bottom: 24px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header content started----- -->
+    <header class="navbar">
+        <nav class="nav-items">
+            <div class="logo"><img src="/imgs/cart.png" alt="">
+                <p><span>O</span>nline shoping here</p>
+            </div>
+
+
+
+            <div class="nav-item-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contatct Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- row -2 content has started  -->
+        <main class="row-2 nav-items">
+            <div class="row2-cont">
+                <h1 class="main-heading">Give Your Workout <br>A New style</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi, laudantium, dolor
+                    distinctio quasi reprehenderit, expedita corrupti consectetur eaque repellat et unde reiciendis nisi
+                    vel? Ipsum corrupti sint quo minima.</p>
+                <button class="btn">Explore Now</button>
+            </div>
+            <div class="row2-cont ">
+                <img src="/imgs/image1.png" alt="">
+            </div>
+            </div>
+        </main>
+
+    </header>
+    <!-- row- 3 content  -->
+
+    <div class="main-2">
+        <div class="row3-container">
+            <div class="row3-img">
+                <img src="/imgs/category-1.jpg" alt="">
+            </div>
+            <div class="row3-img">
+                <img src="/imgs/category-2.jpg" alt="">
+            </div>
+
+            <div class="row3-img">
+                <img src="/imgs/category-3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- row 4 content  -->
+
+    <div class="main-3 main-2">
+        <div class="row4-container">
+            <div class="row4-heading">
+                <h1>Fetured Products</h1>
+            </div>
+            <div class="row4-imgs">
+                <div class="row4">
+                    <img src="/imgs/product-1.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row4">
+                    <img src="/imgs/product-2.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row4">
+                    <img src="/imgs/product-3.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row4">
+                    <img src="/imgs/product-4.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-4 main-2">
+            <div class="row5-heading">
+                <h1>Latest Products</h1>
+            </div>
+            <div class="row5-img-container">
+                <div class="row5-img">
+                    <img src="/imgs/product-5.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row5-img">
+                    <img src="/imgs/product-6.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+
+                <div class="row5-img">
+                    <img src="/imgs/product-7.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row5-img">
+                    <img src="/imgs/product-8.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+
+                </div>
+
+                <div class="row5-img">
+                    <img src="/imgs/product-9.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row5-img">
+                    <img src="/imgs/product-10.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+
+                <div class="row5-img">
+                    <img src="/imgs/product-11.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+
+                <div class="row5-img">
+                    <img src="/imgs/product-12.jpg" alt="">
+                    <p>red printed T-shirt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="price">50.80$</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- smart Band  -->
+
+        <div class="s-last navbar">
+            <div class="s-img">
+                <img src="/imgs/exclusive.png" alt="">
+            </div>
+            <div class="s-cont">
+                <p>Exclusively Available on Redstore</p>
+                <h1>Smart Band 4</h1>
+                <p class="c-cont-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic, nesciunt saepe ducimus dolor
+                    repellat eveniet, ipsa, maxime quod nam aliquid suscipit. Dolore temporibus voluptates accusantium
+                    itaque quisquam, ab ipsa!</p>
+                    <div id="btn">
+                <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- s-last2 contnet  -->
+
+        <div class="s-last2">
+            <div class="s-last2-b-cont">
+                <div class="b-cont">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde accusamus, quisquam quibusdam sed
+                        soluta incidunt sequi vel necessitatibus voluptatum laboriosam, omnis aut ipsum sit. Voluptatum
+                        accusantium sapiente tenetur aspernatur dicta!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/imgs/user-1.png" alt="">
+                </div>
+
+                <div class="b-cont">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde accusamus, quisquam quibusdam sed
+                        soluta incidunt sequi vel necessitatibus voluptatum laboriosam, omnis aut ipsum sit. Voluptatum
+                        accusantium sapiente tenetur aspernatur dicta!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/imgs/user-2.png" alt="">
+                </div>
+
+
+                <div class="b-cont">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde accusamus, quisquam quibusdam sed
+                        soluta incidunt sequi vel necessitatibus voluptatum laboriosam, omnis aut ipsum sit. Voluptatum
+                        accusantium sapiente tenetur aspernatur dicta!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="/imgs/user-3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- .client section content  -->
+
+        <div class="client-section">
+            <h1>Our Clients are</h1>
+            <div class="client">
+                <div class="logo">
+                    <img src="/imgs/icons8-facebook-50.png" alt="">
+                    <h6>Facebook</h6>
+                </div>
+
+
+                <div class="logo">
+                    <img src="/imgs/icons8-apple-50.png" alt="">
+                    <h6>apple</h6>
+                </div>
+
+                <div class="logo">
+                    <img src="/imgs/icons8-youtube-50.png" alt="">
+                    <h6>Youtube</h6>
+                </div>
+
+
+                <div class="logo">
+                    <img src="/imgs/icons8-instagram-50.png" alt="">
+                    <h6>Instagram</h6>
+                </div>
+
+                <div class="logo itself">
+                    <img id="self-logo" src="/imgs/sha logo.jpeg" alt="">
+                    <h6>shahid shaikh</h6>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- footer content  -->
+
+
+        <div class="main-foot">
+            <div class="main">
+                <h3>Download our app</h3>
+                <p>Download App for Android and <br> ios mobile phone.</p>
+                <div class="foo-img">
+                    <img src="/imgs/app-store.png" alt="">
+                    <img src="/imgs/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="/imgs/online shop.jpg" alt="">
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>
+    
+
+
+
+
+
+
